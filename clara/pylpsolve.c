@@ -5,13 +5,13 @@
     "distutils": {
         "depends": [],
         "include_dirs": [
-            "/workspaces/deploy-streamlit-last-last/lpsolve"
+            "/workspaces/pre-streamlit/lpsolve"
         ],
         "libraries": [
             "lpsolve55"
         ],
         "library_dirs": [
-            "/workspaces/deploy-streamlit-last-last/lpsolve"
+            "/workspaces/pre-streamlit/lpsolve"
         ],
         "name": "clara.pylpsolve",
         "sources": [
