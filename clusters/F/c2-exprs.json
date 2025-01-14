@@ -1,0 +1,447 @@
+[
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "result",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Positive\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Negative\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Zero\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "result",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Zero\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Lt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Negative\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Positive\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC22.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "result",
+    "expr": {
+      "type": "Op",
+      "name": "GetElement",
+      "args": [
+        {
+          "type": "Op",
+          "name": "ListInit",
+          "args": [
+            {
+              "type": "Const",
+              "value": "\"Negative\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Zero\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Positive\"",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Add",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Sub",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Gt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Lt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "N",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "1",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC3.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "result",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Lt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Negative\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Positive\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Zero\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC28.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "result",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Gt",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Positive\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Zero\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Negative\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC24.py"
+  },
+  {
+    "fnc": "problemF",
+    "loc": 1,
+    "var": "result",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Var",
+              "name": "N",
+              "primed": false,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "0",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "\"Zero\"",
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "ite",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "N",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "0",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Positive\"",
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "\"Negative\"",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\content\\problemFmod\\correct\\AC19.py"
+  }
+]
