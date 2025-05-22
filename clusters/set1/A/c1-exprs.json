@@ -1,0 +1,284 @@
+[
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "And",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GtE",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "umur",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "fasih",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Var",
+              "name": "nilai",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "100",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "And",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "umur",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "9",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "fasih",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Var",
+              "name": "nilai",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "100",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemA\\C8.py"
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GtE",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "umur",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "fasih",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "nilai",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "True",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "False",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemA\\C4.py"
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "And",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Gt",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "umur",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "9",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "fasih",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "nilai",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "100",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "True",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "False",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemA\\C6.py"
+  }
+]

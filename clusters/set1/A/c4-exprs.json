@@ -1,0 +1,198 @@
+[
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "And",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GtE",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GetElement",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "sim",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "sim",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "1",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "sim",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "100",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemA",
+    "loc": 1,
+    "var": "hasil",
+    "expr": {
+      "type": "Op",
+      "name": "And",
+      "args": [
+        {
+          "type": "Op",
+          "name": "And",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Gt",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GetElement",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "sim",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "9",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "sim",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "1",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Op",
+              "name": "GetElement",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "sim",
+                  "primed": false,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "100",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemA\\C18.py"
+  }
+]

@@ -357,7 +357,7 @@ def main():
             st.code(incorrect_program.getvalue().decode("utf-8"), language="python")
 
         # Cluster directory input
-        cluster_dir = os.path.join(os.path.dirname(__file__), 'clusters\set1')
+        cluster_dir = os.path.join(os.path.dirname(__file__), 'clusters/set1')
         cluster_dir = os.path.join(cluster_dir, type)
 
         max_cost = 0 #0 means no limit
