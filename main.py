@@ -75,7 +75,7 @@ def main():
         st.sidebar.subheader("List Problem")
         problem_type = st.sidebar.radio(
             "Select Problem",
-            ["problemA", "problemB", "problemC", "problemD", "problemE", "problemF", "problemG", "problemH", "problemI", "problemJ"]
+            ["problemA", "problemB", "problemC", "problemD", "problemE", "problemF"]
         )
 
         # Configuration
@@ -93,26 +93,23 @@ def main():
 
         if(problem_type == "problemA") :
             st.write("""
-                ### Chef and Instant Noodles
-                Chef has invented 1-minute Instant Noodles. As the name suggests, each packet takes exactly 1 minute to cook.
-
-                Chef's restaurant has X stoves and only 1 packet can be cooked in a single stove at any minute.
-                
-                How many customers can Chef serve in Y minutes if each customer orders exactly 1 packet of noodles?
+                ### SIM Planet X
+                Di planet X yang berjarak 10 tahun cahaya dari planet Bumi syarat untuk mendapatkan SIM adalah minimal berumur 10 tahun, fasih berbahasa python, dan nilai tes kecakapan mengemudinya tepat 100.
 
                 ### Input Format
-                - The first and only line of input contains two space-separated integers X and Y — the number of stoves and the number of minutes, respectively.
+                Input dalam satu baris berupa dua bilangan bulat **Umur** dan **Nilai**, serta boolean **Fasih**.
 
                 ### Output Format
-                - Print a single integer, the **maximum** number of customers Chef can serve in Y minutes
+                Output dalam satu baris berupa Boolean **True** jika bisa mendapatkan SIM, atau **False** jika belum bisa.
 
                 ### Constraints
-                - 1 ≤ X,Y ≤ 1000
+                - 1 ≤ **umur** ≤ 100
+                - 0 ≤ **nilai** ≤ 100
             """)
             st.write("### Sample 1")
             data = {
-                "Input": ["3 7"],
-                "Output": ["21"]
+                "Input": ["10 True 100", "8 False 99", "7 True 68"],
+                "Output": ["True", "False", "False"]
             }
 
             # Convert the dictionary to a DataFrame
@@ -134,69 +131,26 @@ def main():
             # Display the table without index and make it full width
             st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
 
-            st.write("""
-                ### Explanation Sample 1
-                Chef cooks for Y=7 minutes and can cook X=3 packets per minute, one on each stove.
-
-                So, the total number of packets that can be cooked is X⋅Y=3⋅7=21.
-
-                Each person orders one packet, so the maximum number of customers that can be served is 21.
-            """)
-
-            st.write("### Sample 2")
-            data = {
-                "Input": ["7 8"],
-                "Output": ["56"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 2
-                Chef cooks for Y=8 minutes and can cook X=7 packets per minute, one on each stove.
-
-                So, the total number of packets that can be cooked is X⋅Y=7⋅8=56.
-
-                Each person orders one packet, so the maximum number of customers that can be served is 56.
-            """)
-
-            args_input = "[[[1,2]], [[2,2]], [[3,7]], [[7,7]], [[7,8]], [[9,3]]]"
+            args_input = "[[[10, True, 100]], [[8, False, 99]], [[7, True, 68]], [[10, True, 26]], [[5, True, 100]]]"
             type = "A"
         elif(problem_type == "problemB") :
             st.write("""
-                ### Learn Problem Solving
-                Currently there are courses for 4 languages, and hence there are 8 courses in this section. But suppose there are courses for N languages, what will be the total number of courses in this section?
+                ### Kelipatan Bilangan
+                Buatlah program untuk memeriksa apakah bilangan a kelipatan dari bilangan b.
 
                 ### Input Format
-                The only line of input will contain a single integer N, denoting the number of languages for which there are courses.
+                Input dalam satu baris berupa dua bilangan bulat **a** dan **b**.
 
                 ### Output Format
-                Output on a single line the total number of courses in the section.
+                Output dalam satu baris berupa string **Kelipatan** jika a kelipatan b, dan string **Bukan kelipatan** jika a bukan kelipatan b.
 
                 ### Constraints
-                - 1 ≤ N ≤ 100
+                1 ≤ **a**, **b** ≤ 9999
             """)
-            st.write("### Sample 1")
+            st.write("### Samples")
             data = {
-                "Input": ["4"],
-                "Output": ["8"]
+                "Input": ["1 2", "2 1", "3 6"],
+                "Output": ["Kelipatan", "Bukan kelipatan", "Kelipatan"]
             }
 
             # Convert the dictionary to a DataFrame
@@ -218,61 +172,26 @@ def main():
             # Display the table without index and make it full width
             st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
 
-            st.write("""
-                ### Explanation Sample 1
-                If there are 4 languages, then there will be 2∗4=8 courses in total.
-            """)
-
-            st.write("### Sample 2")
-            data = {
-                "Input": ["9"],
-                "Output": ["18"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 2
-                If there are 9 languages, then there will be 2∗9=18 courses in total.
-            """)
-
-            args_input = "[[2], [4], [5], [9], [12], [3]]"
+            args_input = "[[[1, 2]], [[2, 1]], [[3, 6]], [[5, 7]], [[5, 20]]]"
             type = "B"
         elif(problem_type == "problemC") :
             st.write("""
-                ### Alice and Marks
-                Alice has scored X marks in her test and Bob has scored Y marks in the same test. Alice is happy if she scored at least twice the marks of Bob’s score. Determine whether she is happy or not.
+                ### Konversi Waktu
+                Buatlah program dalam bahasa Python untuk mengkonversi waktu dalam bilangan bulat dengan satuan jam, menit, dan detik menjadi satuan detik.
 
                 ### Input Format
-                - The first and only line of input contains two space-separated integers X, Y — the marks of Alice and Bob respectively.
+                Input dalam satu baris berupa tiga bilangan bulat yang menyatakan waktu dalam **jam**, **menit**, dan **detik**.
 
                 ### Output Format
-                For each testcase, print **Yes** if Alice is happy and **No** if she is not, according to the problem statement.
+                Output dalam satu baris berupa bilangan bulat yang menyatakan hasil konversi ke detik.
 
                 ### Constraints
-                - 1 ≤ X,Y ≤ 100
+                0 ≤ **jam**, **menit**, **detik** ≤ 9999
             """)
-            st.write("### Sample 1")
+            st.write("### Samples")
             data = {
-                "Input": ["2 1"],
-                "Output": ["Yes"]
+                "Input": ["1 2 3", "1 1 1", "1 2 0"],
+                "Output": ["3723", "3661", "3720"]
             }
 
             # Convert the dictionary to a DataFrame
@@ -294,63 +213,27 @@ def main():
             # Display the table without index and make it full width
             st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
 
-            st.write("""
-                ### Explanation Sample 1
-                Alice has scored X = 2 marks whereas Bob has scored Y = 1 mark. As Alice has scored twice as much as Bob (i.e. X ≥ 2Y), the answer is **Yes**.
-            """)
-
-            st.write("### Sample 2")
-            data = {
-                "Input": ["1 2"],
-                "Output": ["No"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 2
-                Alice has scored X = 1 mark whereas Bob has scored Y = 2 marks. As Alice has not scored twice as much as Bob (i.e. X < 2Y), the answer is **No**.
-            """)
-
-            args_input = "[[[7, 9]], [[6, 6]], [[31, 53]], [[53, 8]], [[3, 8]]]"
+            args_input = "[[[1, 2, 3]], [[1, 1, 1]], [[1, 2, 0]], [[0, 0, 1]], [[1, 0, 0]]]"
             type = "C"
         elif(problem_type == "problemD") :
             st.write("""
-                ### Chef and Brain Speed
-                In ChefLand, human brain speed is measured in bits per second (bps). Chef has a threshold limit of X bits per second above which his calculations are prone to errors. If Chef is currently working at Y bits per second, is he prone to errors?
-
-                If Chef is prone to errors print **YES**, otherwise print **NO**.
+                ### Tebak Angka
+                Adik dan kakak sedang bermain tebak-tebakan bilangan. Keduanya menuliskan sebuah bilangan dari 0 hingga 9 di atas secarik kertas secara rahasia dan kemudian membandingkannya. Adik dinyatakan pemenang **Jika Bilangannya Sama dengan Bilangan Kakak** atau **Selisih Bilangannya 1 atau 5**. Buatlah algoritma untuk menentukan apakah adik pemenang permainan ini.
 
                 ### Input Format
-                The only line of input contains two space separated integers X and Y — the threshold limit and the rate at which Chef is currently working at.
+                Input dalam satu baris berupa dua bilangan bulat **adik**(bilangan pertama) dan **kakak**(bilangan kedua).
 
                 ### Output Format
-                If Chef is prone to errors print **YES**, otherwise print **NO**.
+                - Output dalam satu baris berupa boolean **True** atau **False**.
+                - **True** berarti adik pemenang permainan ini dan **False** berarti sebaliknya.
 
                 ### Constraints
-                - 1 ≤ X,Y ≤ 100
+                0 ≤ **adik**, **kakak** ≤ 9
             """)
-            st.write("### Sample 1")
+            st.write("### Samples")
             data = {
-                "Input": ["7 9"],
-                "Output": ["YES"]
+                "Input": ["1 1", "1 2", "1 3"],
+                "Output": ["True", "True", "False"]
             }
 
             # Convert the dictionary to a DataFrame
@@ -372,127 +255,26 @@ def main():
             # Display the table without index and make it full width
             st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
 
-            st.write("""
-                ### Explanation Sample 1
-                Chef's current brain speed of 9 bps is greater than the threshold of 7 bps, hence Chef is prone to errors.
-            """)
-
-            st.write("### Sample 2")
-            data = {
-                "Input": ["6 6"],
-                "Output": ["NO"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 2
-                Chef's current brain speed of 6 bps is not greater than the threshold of 6 bps, hence Chef is not prone to errors.
-            """)
-            st.write("### Sample 3")
-            data = {
-                "Input": ["31 53"],
-                "Output": ["YES"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 3
-                Chef's current brain speed of 53 bps is greater than the threshold of 31 bps, hence Chef is prone to errors.
-            """)
-            st.write("### Sample 4")
-            data = {
-                "Input": ["53 8"],
-                "Output": ["NO"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 4
-                Chef's current brain speed of 8 bps is not greater than the threshold of 53 bps, hence Chef is not prone to errors.
-            """)
-
-            args_input = "[[[2, 1]], [[1, 2]], [[8, 8]], [[53, 8]], [[3, 8]]]"
+            args_input = "[[[1, 1]], [[1, 2]], [[1, 3]], [[2, 6]], [[6, 2]]]"
             type = "D"
         elif(problem_type == "problemE") :
             st.write("""
-                ### Oneful Pairs
-                Chef defines a pair of positive integers (a,b) to be a Oneful Pair, if
-
-                a+b+(a⋅b)=111
-
-                For example, (1,55) is a Oneful Pair, since 1+55+(1⋅55)=56+55=111.
-
-                But (1,56) is not a Oneful Pair, since 1+56+(1⋅56)=57+56=113≠111.
-
-                Given two positive integers a and b, output Yes if they are a Oneful Pair. And No otherwise.
+                ### Penggandaan Digit
+                Buatlah program dalam bahasa Python untuk menggandakan digit suatu bilangan. Misalkan, masukan 12, digandakan menjadi 1122.
 
                 ### Input Format
-                The only line of input contains two space-separated integers a and b.
+                Input dalam satu baris berupa satu buah bilangan berdigit 2 (digit 1 hingga 9).
 
                 ### Output Format
-                Output **Yes**, if (a,b) form a Oneful Pair. Output **No** if they do not.
+                Output dalam satu baris berupa bilangan bulat hasil penggandaan.
 
                 ### Constraints
-                - 1 ≤ a, b ≤ 1000
+                10 ≤ **bilangan** ≤ 99
             """)
-            st.write("### Sample 1")
+            st.write("### Samples")
             data = {
-                "Input": ["1 55"],
-                "Output": ["Yes"]
+                "Input": ["12", "32", "28"],
+                "Output": ["1122", "3322", "2288"]
             }
 
             # Convert the dictionary to a DataFrame
@@ -514,52 +296,26 @@ def main():
             # Display the table without index and make it full width
             st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
 
-            st.write("""
-                ### Explanation Sample 1
-                (1,55) is a Oneful Pair, since 1+55+(1⋅55)=56+55=111.
-            """)
-
-            st.write("### Sample 2")
-            data = {
-                "Input": ["1 56"],
-                "Output": ["No"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 2
-                (1,56) is not a Oneful Pair, since 1+56+(1⋅56)=57+56=113≠111
-            """)
-
-            args_input = "[[[1, 55]], [[1, 56]], [[2, 35]], [[24, 2]], [[55, 1]], [[56, 1]]]"
+            args_input = "[[[12]], [[32]], [[63]], [[28]], [[72]]]"
             type = "E"
         elif(problem_type == "problemF") :
             st.write("""
-                ### Positive and Negative
-                Write a program to check whether a number given as user input is positive, negative, or zero.
+                ### Bilangan Konsekutif
+                Bilangan konsekutif adalah bilangan yang selisih setiap digit yang bersebelahan adalah satu. Buatlah program dalam bahasa Python untuk menentukan apakah suatu bilangan termasuk konsekutif atau tidak.
+
+                ### Input Format
+                Input dalam satu baris berupa sebuah bilangan bulat positif **x**.
+
+                ### Output Format
+                Output dalam satu baris berupa sebuah boolean **True** atau **False** yang menyatakan x adalah konsekutif atau tidak.
+
+                ### Constraints
+                0 ≤ **x** ≤ 9999
             """)
             st.write("### Samples")
             data = {
-                "Input": ["20", "0", "-95"],
-                "Output": ["Positive", "Zero", "Negative"]
+                "Input": ["98", "123", "223"],
+                "Output": ["True", "True", "False"]
             }
 
             # Convert the dictionary to a DataFrame
@@ -581,174 +337,8 @@ def main():
             # Display the table without index and make it full width
             st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
 
-            args_input = "[[0], [-5], [10], [100], [-51]]"
+            args_input = "[[[98]], [[123]], [[223]], [[627]], [[7654]]]"
             type = "F"
-        elif(problem_type == "problemG") :
-            st.write("""
-                ### Grades of Student
-                Write a program to print the grades of a student based on the marks he/she has obtained provided as input. The student is graded **A** if marks are greater than **90**, **B** if marks are greater than **70**, **C** if greater than or equal to **40**, else **F**.
-            """)
-            st.write("### Samples")
-            data = {
-                "Input": ["95", "40", "20"],
-                "Output": ["A", "C", "F"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-            
-            args_input = "[[0], [52], [10], [41], [40], [72], [70], [90], [92], [5]]"
-            type = "G"
-        elif(problem_type == "problemH") :
-            st.write("""
-                ### Print Squares
-                Write a program that utilizes a while loop to print the squares of numbers from 1 to N.
-
-                Check the sample input / output below further clarity
-            """)
-            st.write("### Sample 1")
-            data = {
-                "Input": ["5"],
-                "Output": ["1 4 9 16 25"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            args_input = "[[5], [7], [10]]"
-            type = "H"
-        elif(problem_type == "problemI") :
-            st.write("""
-                ### Print factorial
-                Write a program that uses a while loop to find the factorial of a given number.
-
-                What is the Factorial of an integer N?
-
-                A factorial is a function that multiplies a number by every number below it till 1.
-                     
-                For example, the factorial of 3 represents the multiplication of numbers 3, 2, 1, i.e. 3! = 3 × 2 × 1 and is equal to 6.
-
-                Check sample input / output below for more clarity.
-
-                ### Input Format
-                There are multiple test files.
-
-                Each input test file contains only 1 integer N.
-                ### Output Format
-                For each test file, output only the integer which is Factorial of N.
-                
-                You do not need to output anything else.
-            """)
-            st.write("### Sample 1")
-            data = {
-                "Input": ["5"],
-                "Output": ["120"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 1
-                Factorial of 5 = 1 * 2 * 3 * 4 * 5 = 120
-            """)
-
-            args_input = "[[5], [7], [10]]"
-            type = "I"
-        elif(problem_type == "problemJ") :
-            st.write("""
-                ### Count Vowels
-
-                Write a program that uses a while loop to find the number of vowels in a given input string of lowercase Latin letters.
-
-                **Note**: Vowels in lowercase Latin letters are: `a`, `e`, `i`, `o`, and `u`.
-
-                ### Input Format
-                The only line of input contains a string.
-
-                ### Output Format
-                The only line of output contains a single integer - the count of vowels in the input string.
-            """)
-            st.write("### Sample 1")
-            data = {
-                "Input": ["codechef"],
-                "Output": ["3"]
-            }
-
-            # Convert the dictionary to a DataFrame
-            df = pd.DataFrame(data)
-
-            st.markdown("""
-                <style>
-                .full-width-table {
-                    width: 100%;
-                    text-align: left;
-                }
-
-                .full-width-table th {
-                    text-align: left;  /* Aligns the header text to the left */
-                }
-                </style>
-            """, unsafe_allow_html=True)
-
-            # Display the table without index and make it full width
-            st.markdown(df.to_html(index=False, classes="full-width-table"), unsafe_allow_html=True)
-
-            st.write("""
-                ### Explanation Sample 1
-                codechef has 3 vowels: `o`, `e` and another `e`
-            """)
-        
-            args_input = "[['codechef'], ['abcdefghijklmnopqrstuvwxyz'], ['codingpractice'], ['codingisfun']]"
-            type = "J"
 
         try:
             if args_input.strip():
@@ -767,7 +357,7 @@ def main():
             st.code(incorrect_program.getvalue().decode("utf-8"), language="python")
 
         # Cluster directory input
-        cluster_dir = os.path.join(os.path.dirname(__file__), 'clusters')
+        cluster_dir = os.path.join(os.path.dirname(__file__), 'clusters\set1')
         cluster_dir = os.path.join(cluster_dir, type)
 
         max_cost = 0 #0 means no limit
@@ -817,10 +407,10 @@ def main():
                         if max_cost > 0 and feedback.cost > max_cost:
                             st.error(f'Max cost exceeded ({feedback.cost} > {max_cost})')
                         else:
-                            st.success("Feedback generated successfully!")
-                            st.subheader("Feedback:")
-                            for f in feedback.feedback:
-                                st.markdown(f"* {f}")
+                            if feedback.feedback :
+                                st.error("Answer is Incorrect")
+                            else :
+                                st.success("Answer is Correct")
                     elif feedback.status == Feedback.STATUS_ERROR:
                         st.error(f"Error generating feedback: {feedback.error}")
                     else:
