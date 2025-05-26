@@ -1,0 +1,373 @@
+[
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Or",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Or",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Or",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Or",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Eq",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "adik",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "kakak",
+                          "primed": true,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Eq",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Sub",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "kakak",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Var",
+                              "name": "adik",
+                              "primed": true,
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Eq",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Sub",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "adik",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "kakak",
+                          "primed": true,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "1",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Sub",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "kakak",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Var",
+                      "name": "adik",
+                      "primed": true,
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "5",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Eq",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Sub",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "adik",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "kakak",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "5",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemD",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "ite",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Or",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Or",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Or",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Or",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "adik",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Var",
+                              "name": "kakak",
+                              "primed": true,
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Op",
+                          "name": "Eq",
+                          "args": [
+                            {
+                              "type": "Op",
+                              "name": "Sub",
+                              "args": [
+                                {
+                                  "type": "Var",
+                                  "name": "kakak",
+                                  "primed": true,
+                                  "original": null
+                                },
+                                {
+                                  "type": "Var",
+                                  "name": "adik",
+                                  "primed": true,
+                                  "original": null
+                                }
+                              ],
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "1",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Op",
+                      "name": "Eq",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "Sub",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "adik",
+                              "primed": true,
+                              "original": null
+                            },
+                            {
+                              "type": "Var",
+                              "name": "kakak",
+                              "primed": true,
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "1",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "Eq",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "Sub",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "kakak",
+                          "primed": true,
+                          "original": null
+                        },
+                        {
+                          "type": "Var",
+                          "name": "adik",
+                          "primed": true,
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "5",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Eq",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Sub",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "adik",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Var",
+                      "name": "kakak",
+                      "primed": true,
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "5",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "True",
+          "original": null
+        },
+        {
+          "type": "Const",
+          "value": "False",
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemD\\C4.py"
+  }
+]

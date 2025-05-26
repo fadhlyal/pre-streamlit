@@ -1,0 +1,400 @@
+[
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Add",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Mult",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Add",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Mult",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "FloorDiv",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "GetElement",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "number",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "0",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "10",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Op",
+                  "name": "FloorDiv",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "GetElement",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "number",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "0",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "100",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Add",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Mod",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "GetElement",
+                      "args": [
+                        {
+                          "type": "Var",
+                          "name": "number",
+                          "primed": false,
+                          "original": null
+                        },
+                        {
+                          "type": "Const",
+                          "value": "0",
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Mod",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GetElement",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "number",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "int",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Add",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GetElement",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "str",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "GetElement",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "number",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "0",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GetElement",
+                  "args": [
+                    {
+                      "type": "Op",
+                      "name": "str",
+                      "args": [
+                        {
+                          "type": "Op",
+                          "name": "GetElement",
+                          "args": [
+                            {
+                              "type": "Var",
+                              "name": "number",
+                              "primed": false,
+                              "original": null
+                            },
+                            {
+                              "type": "Const",
+                              "value": "0",
+                              "original": null
+                            }
+                          ],
+                          "original": null
+                        }
+                      ],
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "1",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "2",
+                  "original": null
+                }
+              ],
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemE\\C34.py"
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Add",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Mult",
+          "args": [
+            {
+              "type": "Op",
+              "name": "FloorDiv",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GetElement",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "number",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "1100",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Mult",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Mod",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "GetElement",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "number",
+                      "primed": false,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "0",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "11",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemE\\C31.py"
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Add",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Mult",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Add",
+              "args": [
+                {
+                  "type": "Op",
+                  "name": "Mult",
+                  "args": [
+                    {
+                      "type": "Var",
+                      "name": "satuan",
+                      "primed": true,
+                      "original": null
+                    },
+                    {
+                      "type": "Const",
+                      "value": "10",
+                      "original": null
+                    }
+                  ],
+                  "original": null
+                },
+                {
+                  "type": "Var",
+                  "name": "satuan",
+                  "primed": true,
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "100",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Add",
+          "args": [
+            {
+              "type": "Op",
+              "name": "Mult",
+              "args": [
+                {
+                  "type": "Var",
+                  "name": "puluhan",
+                  "primed": true,
+                  "original": null
+                },
+                {
+                  "type": "Const",
+                  "value": "10",
+                  "original": null
+                }
+              ],
+              "original": null
+            },
+            {
+              "type": "Var",
+              "name": "puluhan",
+              "primed": true,
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": null
+  },
+  {
+    "fnc": "problemE",
+    "loc": 1,
+    "var": "$ret",
+    "expr": {
+      "type": "Op",
+      "name": "Add",
+      "args": [
+        {
+          "type": "Op",
+          "name": "Mult",
+          "args": [
+            {
+              "type": "Var",
+              "name": "satuan",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "1100",
+              "original": null
+            }
+          ],
+          "original": null
+        },
+        {
+          "type": "Op",
+          "name": "Mult",
+          "args": [
+            {
+              "type": "Var",
+              "name": "puluhan",
+              "primed": true,
+              "original": null
+            },
+            {
+              "type": "Const",
+              "value": "11",
+              "original": null
+            }
+          ],
+          "original": null
+        }
+      ],
+      "original": null
+    },
+    "src": "D:\\TA\\clara-master\\examples\\set1\\problemE\\C6.py"
+  }
+]
